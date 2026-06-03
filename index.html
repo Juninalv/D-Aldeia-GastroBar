@@ -12,6 +12,8 @@
       <div class="nav-container">
         <img src="./img/logo.png" class="nav-logo" alt="Logo" />
 
+        <button class="menu-toggle">☰</button>
+
         <nav class="nav-links">
           <a href="#inicio">Início</a>
           <a href="#sobre">Sobre</a>
@@ -98,5 +100,13 @@
         </div>
       </div>
     </section>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
