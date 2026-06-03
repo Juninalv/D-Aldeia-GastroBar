@@ -1,0 +1,71 @@
+.especialidades {
+  width: 100%;
+  padding: 0;
+}
+
+.especialidades-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.especialidade-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.ornamento-card {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.especialidade-card:hover > img {
+  transform: scale(1.05);
+}
+
+.especialidade-info {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 8px;
+  background: var(--bg-secondary);
+  text-align: center;
+  padding: 12px 15px;
+  border-radius: 25px;
+}
+
+.especialidade-info h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: var(--wine-red);
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.especialidade-info img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .especialidades-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .especialidades-grid {
+    grid-template-columns: 1fr;
+  }
+}
