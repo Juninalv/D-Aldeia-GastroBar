@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.25);
+  background: var(--overlay-dark);
   backdrop-filter: blur(6px);
 }
 
@@ -31,14 +31,14 @@
 }
 
 .nav-links a {
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
+  color: var(--text-primary);
   font-size: 0.95rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: #c18b2f;
+  color: var(--gold);
 }

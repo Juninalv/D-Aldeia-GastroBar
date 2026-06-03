@@ -5,7 +5,9 @@
 :root {
   /* Base */
   --bg-primary: #0d0d0d;
+  --bg-secondary: #f8f5ef;
   --text-primary: #ffffff;
+  --text-secondary: #444;
 
   /* Cores do seu layout */
   --wine-red: #8b1e14;
@@ -27,5 +29,5 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
 }
