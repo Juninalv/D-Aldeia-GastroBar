@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 50vh;
+  min-height: 75vh;
   background-image: url("../img/hero.png");
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: var(--overlay-dark);
 }
 
 .hero-content {
@@ -28,33 +28,30 @@
 }
 
 .hero-logo {
-  width: 350px;
+  width: 300px;
   display: block;
 }
 
 .hero-subtitle {
-  color: #fff;
-  font-size: 1.8rem;
+  color: var(--text-primary);
+  font-size: 1rem;
   margin: 1rem 0 1.5rem;
 }
 
 .btn-cardapio {
   display: inline-block;
-  margin-top: 10px;
   padding: 15px 40px;
-  color: #fff;
+  color: var(--text-primary);
   text-decoration: none;
-  background: #8b1e14;
-  border: 2px solid #c18b2f;
-  border-radius: 4px;
+  background: var(--wine-red);
+  border: 1px solid var(--gold);
+  border-radius: 15px;
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 1px;
   transition: 0.3s;
-  align-self: center;
 }
 
 .btn-cardapio:hover {
-  background: #a6271a;
+  background: var(--wine-red-hover);
   transform: translateY(-2px);
 }

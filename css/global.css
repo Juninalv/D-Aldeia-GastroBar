@@ -1,0 +1,31 @@
+/* =========================
+   VARIÁVEIS DE CORES
+========================= */
+
+:root {
+  /* Base */
+  --bg-primary: #0d0d0d;
+  --text-primary: #ffffff;
+
+  /* Cores do seu layout */
+  --wine-red: #8b1e14;
+  --wine-red-hover: #a6271a;
+  --gold: #c18b2f;
+
+  /* Overlay */
+  --overlay-dark: rgba(0, 0, 0, 0.45);
+}
+
+/* =========================
+   RESET BÁSICOS
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
