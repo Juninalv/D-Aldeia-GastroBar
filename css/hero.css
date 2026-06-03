@@ -55,3 +55,72 @@
   background: var(--wine-red-hover);
   transform: translateY(-2px);
 }
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: flex-start;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+    padding: 0 20px;
+  }
+
+  .hero-logo {
+    width: 240px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .btn-cardapio {
+    padding: 13px 32px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 65vh;
+    background-position: 20% center;
+  }
+
+  .hero-content {
+    margin-left: 20px;
+    max-width: 260px;
+  }
+
+  .hero-logo {
+    width: 180px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    margin: 0.8rem 0 1.2rem;
+  }
+
+  .btn-cardapio {
+    padding: 12px 28px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 400px) {
+  .hero-logo {
+    width: 150px;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .btn-cardapio {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+}

@@ -29,7 +29,7 @@
   margin: 0 auto;
 }
 
-.especialidade-card:hover > img {
+.especialidade-card:hover .card-img {
   transform: scale(1.05);
 }
 
@@ -58,14 +58,63 @@
   margin: 0 auto;
 }
 
+/* Tablet */
 @media (max-width: 1024px) {
   .especialidades-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card-img {
+    height: 320px;
+  }
+
+  .especialidade-info h3 {
+    font-size: 22px;
   }
 }
-
+/* Celular */
 @media (max-width: 768px) {
   .especialidades-grid {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card-img {
+    height: 300px;
+  }
+
+  .especialidade-info {
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 12px;
+  }
+
+  .especialidade-info h3 {
+    font-size: 22px;
+  }
+
+  .ornamento-card {
+    width: 60px;
+  }
+}
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .card-img {
+    height: 250px;
+  }
+
+  .especialidade-info {
+    border-radius: 18px;
+    padding: 10px;
+  }
+
+  .especialidade-info h3 {
+    font-size: 18px;
+  }
+
+  .ornamento-card {
+    width: 50px;
   }
 }
