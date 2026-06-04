@@ -468,5 +468,40 @@
       </div>
     </footer>
     <script src="./javascript/main.js"></script>
+
+    <!-- Botão Carrinho -->
+    <button class="cart-button" onclick="toggleCarrinho()">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </button>
+    <aside class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h2>Seu Pedido</h2>
+
+        <button onclick="toggleCarrinho()">✕</button>
+      </div>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-footer">
+        <input type="text" id="cliente" placeholder="Nome completo" />
+
+        <input type="text" id="mesa" placeholder="Número da mesa" />
+
+        <textarea
+          id="observacao"
+          placeholder="Observações do pedido"
+        ></textarea>
+
+        <h3>
+          Total:
+          <span id="cart-total"> R$ 0,00 </span>
+        </h3>
+
+        <button class="btn-whatsapp" onclick="enviarPedido()">
+          Enviar Pedido
+        </button>
+      </div>
+    </aside>
   </body>
 </html>
