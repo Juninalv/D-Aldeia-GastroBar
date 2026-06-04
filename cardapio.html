@@ -20,9 +20,9 @@
 
         <nav class="nav-links">
           <a href="index.html">Início</a>
-          <a href="#sobre">Sobre</a>
-          <a href="#cardapio">Cardápio</a>
-          <a href="#eventos">Eventos</a>
+          <a href="index.html#sobre">Sobre</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="index.html#eventos">Eventos</a>
         </nav>
       </div>
     </header>
@@ -394,44 +394,79 @@
       <div class="tabela-cardapio">
         <div class="item-cardapio">
           <span>Campari</span>
-          <span>R$ 15,00</span>
-        </div>
 
-        <div class="item-cardapio">
-          <span>Velho Barreiro</span>
-          <span>R$ 8,00</span>
-        </div>
-
-        <div class="item-cardapio">
-          <span>51</span>
-          <span>R$ 8,00</span>
+          <div class="item-acoes">
+            <span class="preco-dose">R$ 15,00</span>
+            <button class="btn-add-mini">+</button>
+          </div>
         </div>
 
         <div class="item-cardapio">
           <span>Red Label</span>
-          <span>R$ 18,00</span>
+
+          <div class="item-acoes">
+            <span class="preco-dose">R$ 18,00</span>
+            <button class="btn-add-mini">+</button>
+          </div>
         </div>
 
         <div class="item-cardapio">
           <span>Black Label</span>
-          <span>R$ 25,00</span>
-        </div>
 
-        <div class="item-cardapio">
-          <span>Jack Daniel's</span>
-          <span>R$ 22,00</span>
-        </div>
-
-        <div class="item-cardapio">
-          <span>Absolut</span>
-          <span>R$ 18,00</span>
-        </div>
-
-        <div class="item-cardapio">
-          <span>Smirnoff</span>
-          <span>R$ 14,00</span>
+          <div class="item-acoes">
+            <span class="preco-dose">R$ 25,00</span>
+            <button class="btn-add-mini">+</button>
+          </div>
         </div>
       </div>
     </section>
+    <section class="galeria">
+      <div class="slider">
+        <div class="slide-track">
+          <img src="./img/galeria-foto-1.png" alt="Foto 1" />
+          <img src="./img/galeria-foto-2.png" alt="Foto 2" />
+          <img src="./img/galeria-foto-3.png" alt="Foto 3" />
+          <img src="./img/galeria-foto-4.png" alt="Foto 4" />
+          <img src="./img/galeria-foto-5.png" alt="Foto 5" />
+
+          <!-- Repetidas para criar loop infinito -->
+          <img src="./img/galeria-foto-1.png" alt="Foto 1" />
+          <img src="./img/galeria-foto-2.png" alt="Foto 2" />
+          <img src="./img/galeria-foto-3.png" alt="Foto 3" />
+          <img src="./img/galeria-foto-4.png" alt="Foto 4" />
+          <img src="./img/galeria-foto-5.png" alt="Foto 5" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="D'Aldeia Gastro Bar" />
+          <p class="footer-copy">© 2026 D'Aldeia Gastro Bar</p>
+        </div>
+
+        <div class="footer-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>Bairro do Mandutinho</div>
+        </div>
+
+        <div class="footer-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>(12) 99999-9999</div>
+        </div>
+
+        <div class="footer-item">
+          <i class="fa-brands fa-instagram"></i>
+          <div>@daldeia.gastrobar</div>
+        </div>
+
+        <div class="footer-item footer-hours">
+          <i class="fa-regular fa-clock"></i>
+
+          <div>Sex. a Dom. • 18h às 01h</div>
+        </div>
+      </div>
+    </footer>
+    <script src="./javascript/main.js"></script>
   </body>
 </html>
