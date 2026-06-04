@@ -1,0 +1,163 @@
+/* =========================
+   CONHEÇA A ALDEIA
+========================= */
+
+.aldeia-section {
+  padding: 100px 5%;
+  background: var(--bg-primary);
+}
+
+.aldeia-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.aldeia-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.aldeia-content h2 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.aldeia-content p {
+  color: #d1d1d1;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.section-tag {
+  color: #c9a227;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.btn-aldeia {
+  display: inline-block;
+  padding: 15px 40px;
+  color: var(--text-primary);
+  text-decoration: none;
+  background: var(--wine-red);
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-aldeia:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   HOSPEDAGENS
+========================= */
+
+.hospedagens-section {
+  padding: 100px 5%;
+  background: var(--bg-secondary);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+.section-header h2 {
+  color: var(--wine-red);
+  font-size: 3rem;
+  margin: 15px 0;
+}
+
+.section-header p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.hospedagens-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hospedagem-card {
+  background: #181818;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.hospedagem-card:hover {
+  transform: translateY(-8px);
+}
+
+.hospedagem-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.hospedagem-info {
+  padding: 25px;
+}
+
+.hospedagem-info h3 {
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.hospedagem-info p {
+  color: #cfcfcf;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.btn-card {
+  color: #c9a227;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-card:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 991px) {
+  .aldeia-container {
+    grid-template-columns: 1fr;
+  }
+
+  .aldeia-content {
+    text-align: center;
+  }
+
+  .hospedagens-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aldeia-content h2,
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .aldeia-img img {
+    height: 350px;
+  }
+}

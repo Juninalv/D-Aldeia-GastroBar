@@ -1,7 +1,6 @@
 .cardapio {
   background: var(--bg-primary);
   padding: 100px 8%;
-  margin-top: 5px;
 }
 
 .cardapio-content {
