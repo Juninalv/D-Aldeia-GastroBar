@@ -1,0 +1,172 @@
+.eventos {
+  padding: 100px 5%;
+  background: #f8f4ef;
+}
+
+.evento-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.carousel {
+  position: relative;
+  flex: 1;
+}
+
+.slide {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-radius: 20px;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 20px;
+  z-index: 10;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.evento-info {
+  flex: 1;
+}
+
+.evento-info span {
+  color: #b15c43;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.evento-info h2 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 20px 0;
+  color: #7a2f1d;
+}
+
+.evento-info p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.descricao {
+  max-width: 400px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.btn-evento {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #7a2f1d;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.btn-evento:hover {
+  transform: translateY(-3px);
+}
+
+@media (max-width: 992px) {
+  .evento-container {
+    gap: 40px;
+  }
+
+  .evento-info h2 {
+    font-size: 3rem;
+  }
+
+  .slide {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .evento-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .carousel,
+  .evento-info {
+    width: 100%;
+  }
+
+  .slide {
+    height: auto;
+    max-height: 450px;
+  }
+
+  .evento-info {
+    text-align: center;
+  }
+
+  .evento-info h2 {
+    font-size: 2.5rem;
+  }
+
+  .descricao {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-evento {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eventos {
+    padding: 70px 20px;
+  }
+
+  .evento-info span {
+    font-size: 0.8rem;
+  }
+
+  .evento-info h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  .evento-info p {
+    font-size: 1rem;
+  }
+
+  .btn-evento {
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}

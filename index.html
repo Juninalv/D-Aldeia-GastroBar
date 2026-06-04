@@ -126,6 +126,55 @@
         </div>
       </div>
     </section>
+    <section class="eventos">
+      <div class="evento-container">
+        <div class="carousel">
+          <button class="btn prev">&#10094;</button>
+
+          <img src="./img/evento-1.jpg" class="slide active" />
+          <img src="./img/evento-2.jpg" class="slide" />
+          <img src="./img/evento-3.jpg" class="slide" />
+          <img src="./img/evento-4.jpg" class="slide" />
+          <img src="./img/evento-5.jpg" class="slide" />
+
+          <button class="btn next">&#10095;</button>
+        </div>
+
+        <div class="evento-info">
+          <span>PRÓXIMO EVENTO</span>
+
+          <h2>Feriadão na Aldeia</h2>
+
+          <p>04 a 07 de junho</p>
+
+          <p class="descricao">
+            Música ao vivo, gastronomia autoral e drinks especiais para uma
+            noite inesquecível.
+          </p>
+
+          <a href="#" class="btn-evento"> Reservar Mesa </a>
+        </div>
+      </div>
+    </section>
+    >
+    <section class="galeria">
+      <div class="slider">
+        <div class="slide-track">
+          <img src="./img/galeria-foto-1.png" alt="Foto 1" />
+          <img src="./img/galeria-foto-2.png" alt="Foto 2" />
+          <img src="./img/galeria-foto-3.png" alt="Foto 3" />
+          <img src="./img/galeria-foto-4.png" alt="Foto 4" />
+          <img src="./img/galeria-foto-5.png" alt="Foto 5" />
+
+          <!-- Repetidas para criar loop infinito -->
+          <img src="./img/galeria-foto-1.png" alt="Foto 1" />
+          <img src="./img/galeria-foto-2.png" alt="Foto 2" />
+          <img src="./img/galeria-foto-3.png" alt="Foto 3" />
+          <img src="./img/galeria-foto-4.png" alt="Foto 4" />
+          <img src="./img/galeria-foto-5.png" alt="Foto 5" />
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-logo">
@@ -159,6 +208,40 @@
 
       menuToggle.addEventListener("click", () => {
         navLinks.classList.toggle("active");
+      });
+    </script>
+    <script>
+      const slides = document.querySelectorAll(".slide");
+
+      const next = document.querySelector(".next");
+      const prev = document.querySelector(".prev");
+
+      let current = 0;
+
+      function showSlide(index) {
+        slides.forEach((slide) => slide.classList.remove("active"));
+
+        slides[index].classList.add("active");
+      }
+
+      next.addEventListener("click", () => {
+        current++;
+
+        if (current >= slides.length) {
+          current = 0;
+        }
+
+        showSlide(current);
+      });
+
+      prev.addEventListener("click", () => {
+        current--;
+
+        if (current < 0) {
+          current = slides.length - 1;
+        }
+
+        showSlide(current);
       });
     </script>
   </body>
