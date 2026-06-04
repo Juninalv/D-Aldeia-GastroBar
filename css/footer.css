@@ -79,6 +79,16 @@
   font-size: 14px;
   margin-top: 2px;
 }
+
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #c59d5f;
+}
 @media (max-width: 900px) {
   .footer-container {
     flex-direction: column;
