@@ -219,6 +219,16 @@ function enviarPedido() {
     `https://wa.me/5512997314471?text=${encodeURIComponent(msg)}`,
     "_blank",
   );
+
+  // Limpa o carrinho
+  carrinho = [];
+
+  localStorage.removeItem("carrinho");
+
+  // Recarrega a página
+  setTimeout(() => {
+    location.reload();
+  }, 300);
 }
 
 atualizarCarrinho();
