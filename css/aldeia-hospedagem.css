@@ -98,6 +98,8 @@
   border-radius: 12px;
   overflow: hidden;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .hospedagem-card:hover {
@@ -112,6 +114,8 @@
 
 .hospedagem-info {
   padding: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hospedagem-info h3 {
@@ -125,14 +129,28 @@
   line-height: 1.6;
 }
 
-.btn-card {
-  color: #c9a227;
-  text-decoration: none;
-  font-weight: 600;
+.hospedagens-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.btn-card:hover {
-  opacity: 0.8;
+.btn-hospedagens {
+  display: inline-block;
+  padding: 15px 40px;
+  color: var(--text-primary);
+  text-decoration: none;
+  background: var(--wine-red);
+  border: 1px solid var(--gold);
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-hospedagens:hover {
+  transform: translateY(-3px);
 }
 
 /* =========================
