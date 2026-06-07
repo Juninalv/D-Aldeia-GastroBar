@@ -181,37 +181,8 @@
 }
 
 /* ========================= */
-/* PREÇO */
-/* ========================= */
-
-.preco {
-  display: block;
-  font-size: 26px;
-  font-weight: 600;
-  color: var(--gold);
-  margin-bottom: 20px;
-}
-
-/* ========================= */
 /* BOTÃO */
 /* ========================= */
-
-.btn-add {
-  width: 100%;
-  border: none;
-  padding: 14px;
-  border-radius: 50px;
-  background: var(--wine-red);
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-add:hover {
-  background: var(--gold);
-}
 
 .tabela-cardapio {
   max-width: 800px;
@@ -243,39 +214,6 @@
   font-size: 20px;
   color: var(--wine-red);
   font-weight: 500;
-}
-
-.item-acoes {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.preco-dose {
-  color: var(--gold);
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.btn-add-mini {
-  width: 38px;
-  height: 38px;
-  border: none;
-  border-radius: 50%;
-  background: var(--wine-red);
-  color: #fff;
-  font-size: 22px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.btn-add-mini:hover {
-  background: var(--gold);
-  transform: scale(1.08);
 }
 
 /* ========================= */
@@ -326,10 +264,6 @@
     font-size: 18px;
   }
 
-  .preco-dose {
-    font-size: 18px;
-  }
-
   .item-acoes {
     gap: 10px;
   }
@@ -347,9 +281,5 @@
   .produto-info p {
     font-size: 15px;
     min-height: auto;
-  }
-
-  .preco {
-    font-size: 22px;
   }
 }
