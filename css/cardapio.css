@@ -27,7 +27,7 @@
 }
 
 .cardapio p {
-  color: var(--bg-secondary);
+  color: var(--text-tertiary);
   line-height: 1.8;
   max-width: 500px;
 }

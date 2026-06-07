@@ -25,18 +25,18 @@
 
 .aldeia-content h2 {
   font-size: 3rem;
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
 .aldeia-content p {
-  color: #d1d1d1;
+  color: var(--text-tertiary);
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
 .section-tag {
-  color: #c9a227;
+  color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
@@ -94,7 +94,7 @@
 }
 
 .hospedagem-card {
-  background: #181818;
+  background: var(--bg-primary);
   border-radius: 12px;
   overflow: hidden;
   transition: 0.3s;
@@ -119,12 +119,12 @@
 }
 
 .hospedagem-info h3 {
-  color: #fff;
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
 .hospedagem-info p {
-  color: #cfcfcf;
+  color: var(--text-tertiary);
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -138,15 +138,15 @@
 
 .btn-hospedagens {
   display: inline-block;
-  padding: 15px 40px;
-  color: var(--text-primary);
-  text-decoration: none;
+  margin-top: 30px;
   background: var(--wine-red);
-  border: 1px solid var(--gold);
-  border-radius: 15px;
-  font-size: 1rem;
+  color: var(--text-primary);
+  padding: 15px 35px;
+  text-decoration: none;
+  border-radius: 6px;
   font-weight: 600;
   transition: 0.3s;
+  border: 1px solid var(--gold);
 }
 
 .btn-hospedagens:hover {
