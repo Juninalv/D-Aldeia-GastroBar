@@ -30,6 +30,11 @@
 .hero-logo {
   width: 300px;
   display: block;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 1))
+    drop-shadow(0 0 35px rgba(0, 0, 0, 1))
+    drop-shadow(0 0 70px rgba(0, 0, 0, 0.95))
+    drop-shadow(0 0 120px rgba(0, 0, 0, 0.85))
+    drop-shadow(0 0 180px rgba(0, 0, 0, 0.7));
 }
 
 .hero-subtitle {
