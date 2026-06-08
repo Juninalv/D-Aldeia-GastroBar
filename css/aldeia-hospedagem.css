@@ -16,7 +16,8 @@
   align-items: center;
 }
 
-.aldeia-img img {
+.aldeia-img img,
+.aldeia-img video {
   width: 100%;
   height: 500px;
   object-fit: cover;
