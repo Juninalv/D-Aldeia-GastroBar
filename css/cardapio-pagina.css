@@ -97,6 +97,7 @@
   color: var(--wine-red);
   position: relative;
   display: inline-block;
+  margin-top: 5px;
 }
 
 .categoria-titulo h2::after {
@@ -264,6 +265,21 @@
   color: var(--text-secondary);
   font-size: 18px;
   line-height: 1.7;
+}
+
+.banner-bebida {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.banner-bebida img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
 }
 
 /* ========================= */
