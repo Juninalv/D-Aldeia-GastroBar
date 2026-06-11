@@ -40,7 +40,7 @@
 
 /* TÍTULO */
 .sobre-conteudo h2 {
-  font-size: 58px;
+  font-size: 3rem;
   font-weight: 500;
   color: var(--wine-red);
   margin-bottom: 15px;
@@ -59,7 +59,7 @@
 
 /* TEXTO */
 .sobre-conteudo p {
-  font-size: 22px;
+  font-size: 1rem;
   line-height: 1.9;
   color: var(--text-secondary);
 }

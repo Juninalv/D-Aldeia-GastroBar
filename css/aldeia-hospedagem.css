@@ -52,7 +52,7 @@
   text-decoration: none;
   background: var(--wine-red);
   border: 1px solid var(--gold);
-  border-radius: 15px;
+  border-radius: 999px;
   font-size: 1rem;
   font-weight: 600;
   transition: 0.3s;
@@ -144,7 +144,7 @@
   color: var(--text-primary);
   padding: 15px 35px;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 999px;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid var(--gold);

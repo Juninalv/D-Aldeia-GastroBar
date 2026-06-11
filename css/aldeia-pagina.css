@@ -1,0 +1,568 @@
+/* ==========================================
+   ALDEIA OUTRO MUNDO
+========================================== */
+
+.sobre-aldeia {
+  background: var(--bg-primary);
+}
+
+/* CONTAINER */
+
+.container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero-sobre {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
+    url("../img/galeria2.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  display: none;
+}
+
+.hero-sobre .container,
+.cta-final .container {
+  position: relative;
+  z-index: 2;
+}
+
+.tag,
+.section-tag {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero-sobre h1 {
+  max-width: 70vh;
+  line-height: 1.1;
+  margin: 20px 0;
+  color: var(--text-primary);
+}
+
+.hero-sobre p {
+  max-width: 90vh;
+  color: var(--text-tertiary);
+  line-height: 1.8;
+}
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--wine-red);
+  color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  background: var(--wine-red-hover);
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+}
+
+.btn-secondary:hover {
+  background: var(--gold);
+  color: var(--bg-primary);
+}
+
+/* ==========================================
+   HISTÓRIA
+========================================== */
+
+.historia {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.historia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.historia-img img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+}
+
+.historia h2 {
+  font-size: 3rem;
+  color: var(--wine-red);
+  margin: 15px 0 25px;
+}
+
+.historia p {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* NÚMEROS */
+
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.numero {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.numero h3 {
+  color: var(--gold);
+  font-size: 1.8rem;
+}
+
+.numero span {
+  color: #666;
+}
+
+/* ==========================================
+   GALERIA
+========================================== */
+
+.galeria {
+  background: var(--bg-secondary);
+  padding-bottom: 60px;
+}
+
+.slider {
+  overflow: hidden;
+}
+
+.slide-track img {
+  border-radius: 20px;
+}
+
+/* ==========================================
+   EXPERIÊNCIAS
+========================================== */
+
+.experiencias {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.experiencias h2 {
+  color: var(--wine-red);
+  font-size: 3rem;
+  margin: 15px 0 60px;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--bg-tertiary);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(193, 139, 47, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 24px;
+}
+
+.card-tag {
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(193, 139, 47, 0.15);
+  color: var(--gold);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card h3 {
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-tertiary);
+  line-height: 1.7;
+}
+
+/* ==========================================
+   SUSTENTABILIDADE
+========================================== */
+
+.sustentabilidade {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.sustentabilidade h2 {
+  color: var(--wine-red);
+  font-size: 3rem;
+  margin: 15px 0 50px;
+}
+
+.sust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.sust-card {
+  background: var(--bg-tertiary);
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.sust-card:hover {
+  transform: translateY(-6px);
+}
+
+.sust-card h3 {
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.sust-card p {
+  color: var(--text-tertiary);
+  line-height: 1.7;
+}
+
+.sustentabilidade-banner {
+  margin: 50px 0 60px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.sustentabilidade-banner img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ==========================================
+   IMPACTO
+========================================== */
+
+.impacto {
+  padding: 120px 0;
+  background: var(--bg-primary);
+}
+
+.impacto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.impacto h3 {
+  color: var(--gold);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.impacto span {
+  color: var(--text-tertiary);
+}
+
+/* ==========================================
+   ESSÊNCIA
+========================================== */
+
+.essencia {
+  padding: 60px 0;
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+.essencia h2 {
+  color: var(--text-primary);
+  font-size: 3rem;
+  margin: 15px 0 25px;
+}
+
+.essencia > .container > p {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  color: var(--text-tertiary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.essencia-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.essencia-grid .item {
+  background: var(--bg-tertiary);
+  padding: 35px;
+  border-radius: 24px;
+  transition: 0.3s;
+}
+
+.essencia-grid .item:hover {
+  transform: translateY(-6px);
+}
+
+.essencia-grid h3 {
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.essencia-grid p {
+  color: var(--text-tertiary);
+}
+
+/* ==========================================
+   BIOCONSTRUÇÃO
+========================================== */
+
+.bioconstrucao {
+  padding: 60px 0;
+  background: var(--bg-primary);
+}
+
+.bioconstrucao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.bioconstrucao-img img {
+  width: 100%;
+  border-radius: 24px;
+  display: block;
+}
+
+.bioconstrucao h2 {
+  color: var(--text-primary);
+  font-size: 3rem;
+  margin: 15px 0 25px;
+}
+
+.bioconstrucao p {
+  color: var(--text-tertiary);
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.bioconstrucao ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.bioconstrucao li {
+  margin-bottom: 12px;
+  color: var(--text-tertiary);
+}
+
+/* ==========================================
+   EVENTOS
+========================================== */
+
+.eventos-aldeia {
+  padding: 60px 0;
+  background: var(--bg-secondary);
+}
+
+.eventos-aldeia h2 {
+  color: var(--wine-red);
+  font-size: 3rem;
+  margin: 15px 0 25px;
+}
+
+.evento-text {
+  max-width: 750px;
+  margin-bottom: 60px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ==========================================
+   INFRAESTRUTURA
+========================================== */
+
+.infraestrutura {
+  padding: 60px 0;
+  background: var(--bg-primary);
+  text-align: center;
+}
+
+.infraestrutura h2 {
+  color: var(--text-primary);
+  font-size: 3rem;
+  margin: 15px auto 60px;
+  max-width: 900px;
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.infra-card {
+  background: white;
+  color: var(--text-secondary);
+
+  padding: 35px;
+  border-radius: 24px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.infra-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ==========================================
+   CTA FINAL
+========================================== */
+
+.cta-final {
+  padding: 160px 0;
+  text-align: center;
+  position: relative;
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../img/galeria1.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-final h2 {
+  max-width: 850px;
+  margin: auto;
+  color: var(--text-primary);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.cta-final p {
+  max-width: 700px;
+  margin: 25px auto 40px;
+  color: var(--text-tertiary);
+  line-height: 1.8;
+}
+
+.cta-final .hero-buttons {
+  justify-content: center;
+}
+
+/* ==========================================
+   RESPONSIVO
+========================================== */
+
+@media (max-width: 768px) {
+  .hero-sobre h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .historia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .impacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .historia,
+  .experiencias,
+  .sustentabilidade,
+  .impacto {
+    padding: 90px 0;
+  }
+  .essencia-grid,
+  .infra-grid,
+  .impacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bioconstrucao-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bioconstrucao-img {
+    order: -1;
+  }
+}

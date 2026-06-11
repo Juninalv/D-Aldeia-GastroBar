@@ -50,7 +50,7 @@
   text-decoration: none;
   background: var(--wine-red);
   border: 1px solid var(--gold);
-  border-radius: 15px;
+  border-radius: 999px;
   font-size: 1rem;
   font-weight: 600;
   transition: 0.3s;
