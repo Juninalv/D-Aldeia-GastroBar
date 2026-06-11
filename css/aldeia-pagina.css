@@ -31,10 +31,6 @@
   background-position: center;
 }
 
-.overlay {
-  display: none;
-}
-
 .hero-sobre .container,
 .cta-final .container {
   position: relative;
