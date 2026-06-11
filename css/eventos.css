@@ -1,6 +1,6 @@
 .eventos {
   padding: 100px 5%;
-  background: #f8f4ef;
+  background: var(--bg-secondary);
 }
 
 .evento-container {
@@ -55,7 +55,7 @@
 }
 
 .evento-info span {
-  color: #b15c43;
+  color: var(--wine-red);
   letter-spacing: 2px;
   font-size: 0.9rem;
 }
@@ -64,7 +64,7 @@
   font-size: 4rem;
   line-height: 1;
   margin: 20px 0;
-  color: #7a2f1d;
+  color: var(--wine-red);
 }
 
 .evento-info p {
@@ -74,7 +74,7 @@
 
 .descricao {
   max-width: 400px;
-  color: #555;
+  color: var(--text-secondary);
   line-height: 1.7;
 }
 
@@ -82,8 +82,8 @@
   display: inline-block;
   margin-top: 20px;
   padding: 14px 28px;
-  background: #7a2f1d;
-  color: white;
+  background: var(--wine-red);
+  color: var(--text-primary);
   text-decoration: none;
   border-radius: 50px;
   transition: 0.3s;

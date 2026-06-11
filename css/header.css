@@ -1,3 +1,7 @@
+/* =======================
+   NAVBAR
+======================= */
+
 .nav {
   position: fixed;
   top: 0;
@@ -35,13 +39,17 @@
   font-size: 0.95rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: 0.3s;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .nav-links a:hover {
   color: var(--gold);
 }
+
+/* =======================
+   MENU MOBILE
+======================= */
 
 .menu-toggle {
   display: none;
@@ -51,6 +59,10 @@
   font-size: 2rem;
   cursor: pointer;
 }
+
+/* =======================
+   RESPONSIVO
+======================= */
 
 @media (max-width: 768px) {
   .nav-container {
@@ -82,16 +94,12 @@
   .nav-links.active {
     display: flex;
     flex-direction: column;
-
     position: absolute;
     top: 100%;
     left: 0;
-
     width: 100%;
     padding: 20px;
-
     background: rgba(0, 0, 0, 0.95);
-
     gap: 1rem;
     text-align: center;
   }
