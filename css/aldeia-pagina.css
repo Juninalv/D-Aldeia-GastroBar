@@ -521,50 +521,147 @@
    RESPONSIVO
 ========================================== */
 
+/* ==========================================
+   TABLETS E NOTEBOOKS PEQUENOS
+========================================== */
+
+@media (max-width: 1024px) {
+  .hero-sobre h1,
+  .historia h2,
+  .experiencias h2,
+  .sustentabilidade h2,
+  .essencia h2,
+  .bioconstrucao h2,
+  .eventos-aldeia h2,
+  .infraestrutura h2 {
+    font-size: 2.5rem;
+  }
+
+  .historia-grid,
+  .bioconstrucao-grid {
+    gap: 40px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .essencia-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .infra-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .impacto-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ==========================================
+   TABLETS RETRATO E MOBILE
+========================================== */
+
 @media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+
+  .hero-sobre {
+    min-height: 80vh;
+    text-align: center;
+  }
+
   .hero-sobre h1 {
-    font-size: 2.7rem;
+    font-size: 2.2rem;
+    max-width: 100%;
+  }
+
+  .hero-sobre p {
+    max-width: 100%;
   }
 
   .hero-buttons {
     flex-direction: column;
+    align-items: center;
   }
 
-  .historia-grid {
-    grid-template-columns: 1fr;
+  .hero-buttons a {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
   }
 
-  .impacto-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .historia,
-  .experiencias,
-  .sustentabilidade,
-  .impacto {
-    padding: 90px 0;
-  }
-  .essencia-grid,
-  .infra-grid,
-  .impacto-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .historia-grid,
   .bioconstrucao-grid {
     grid-template-columns: 1fr;
+    gap: 40px;
   }
 
   .bioconstrucao-img {
     order: -1;
   }
-}
 
-@media (max-width: 1024px) {
-  .cards-grid {
+  .cards-grid,
+  .infra-grid,
+  .impacto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .essencia-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .numeros {
+    grid-template-columns: 1fr;
+  }
+
+  .historia h2,
+  .experiencias h2,
+  .sustentabilidade h2,
+  .essencia h2,
+  .bioconstrucao h2,
+  .eventos-aldeia h2,
+  .infraestrutura h2 {
+    font-size: 2rem;
+  }
+
+  .sustentabilidade-banner img {
+    height: 300px;
+  }
+
+  .historia,
+  .experiencias,
+  .sustentabilidade,
+  .impacto,
+  .essencia,
+  .bioconstrucao,
+  .eventos-aldeia,
+  .infraestrutura {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 480px) {
+  .hero-sobre h1 {
+    font-size: 1.9rem;
+  }
+
+  .essencia-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content,
+  .sust-card,
+  .infra-card,
+  .essencia-grid .item {
+    padding: 20px;
+  }
+
+  .card img {
+    height: 220px;
+  }
+
+  .impacto h3 {
+    font-size: 2.2rem;
   }
 }
