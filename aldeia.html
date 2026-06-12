@@ -70,9 +70,13 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#historia" class="btn-primary"> Nossa História </a>
+            <a href="https://aldeiaoutromundo.com.br" class="btn-primary">
+              Visitar Site Oficial
+            </a>
 
-            <a href="#" class="btn-secondary"> Baixar Material </a>
+            <a href="#" class="btn-secondary abrir-livro">
+              Material Completo
+            </a>
           </div>
         </div>
       </div>
@@ -599,10 +603,17 @@
               Visitar Site Oficial
             </a>
 
-            <a href="#" class="btn-secondary"> Baixar Material Completo </a>
+            <a href="#" class="btn-secondary abrir-livro">
+              Material Completo
+            </a>
           </div>
         </div>
       </section>
+      <div class="livro-modal" id="livroModal">
+        <button id="fecharLivro">✕</button>
+
+        <div id="flipbook"></div>
+      </div>
     </section>
 
     <!-- LIGHTBOX -->
@@ -677,5 +688,8 @@
       </div>
     </footer>
     <script src="./javascript/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
   </body>
 </html>
