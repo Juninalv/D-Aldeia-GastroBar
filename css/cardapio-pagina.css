@@ -35,16 +35,27 @@
 /* MENU CATEGORIAS */
 
 .menu-categorias {
+  position: sticky;
+  top: 65px;
+  z-index: 999;
+
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  flex-wrap: wrap;
   gap: 30px;
-  padding: 25px 20px;
-  background: var(--bg-secondary);
+
+  padding: 20px;
+  background: rgba(248, 245, 240, 0.97);
+  backdrop-filter: blur(10px);
+
   border-top: 1px solid rgba(122, 47, 29, 0.1);
   border-bottom: 1px solid rgba(122, 47, 29, 0.1);
+
+  overflow-x: auto;
+  flex-wrap: nowrap;
+
+  scrollbar-width: none;
 }
 
 .menu-categorias a {
@@ -54,6 +65,9 @@
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
+
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .menu-categorias a::after {
@@ -74,6 +88,10 @@
 
 .menu-categorias a:hover::after {
   width: 100%;
+}
+
+.menu-categorias::-webkit-scrollbar {
+  display: none;
 }
 
 /* ========================= */
