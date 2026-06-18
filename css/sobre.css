@@ -30,7 +30,7 @@
 /* BLOCO INTERNO */
 .sobre-conteudo {
   width: 100%;
-  max-width: 420px;
+  max-width: 650px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -63,6 +63,7 @@
   line-height: 1;
   color: var(--text-secondary);
   text-align: justify;
+  margin-bottom: 20px;
 }
 
 /* RAMO */
