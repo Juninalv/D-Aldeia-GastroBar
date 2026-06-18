@@ -304,6 +304,11 @@
   display: flex;
   justify-content: center;
 }
+.item-cardapio small {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  font-weight: 400;
+}
 
 /* ========================= */
 /* RESPONSIVO */
