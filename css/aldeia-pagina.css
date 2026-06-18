@@ -25,7 +25,7 @@
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)),
-    url("../img/aldeia-outro-mundo");
+    url("../img/pagina-aldeia/aldeia-aerea.jpg");
 
   background-size: cover;
   background-position: center;
@@ -493,7 +493,7 @@
 
   background:
     linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-    url("../img/aldeia-outro-mundo");
+    url("../img/pagina-aldeia/aldeia-aerea.jpg");
 
   background-size: cover;
   background-position: center;
