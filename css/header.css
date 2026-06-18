@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 9999;
   background: var(--overlay-dark);
   backdrop-filter: blur(6px);
 }
@@ -102,5 +102,6 @@
     background: rgba(0, 0, 0, 0.95);
     gap: 1rem;
     text-align: center;
+    z-index: 10000;
   }
 }
