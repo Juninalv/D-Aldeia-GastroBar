@@ -38,23 +38,18 @@
   position: sticky;
   top: 65px;
   z-index: 999;
-
   width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-
   padding: 20px;
   background: rgba(248, 245, 240, 0.97);
   backdrop-filter: blur(10px);
-
   border-top: 1px solid rgba(122, 47, 29, 0.1);
   border-bottom: 1px solid rgba(122, 47, 29, 0.1);
-
   overflow-x: auto;
   flex-wrap: nowrap;
-
   scrollbar-width: none;
 }
 
@@ -65,7 +60,6 @@
   font-weight: 500;
   transition: all 0.3s ease;
   position: relative;
-
   flex-shrink: 0;
   white-space: nowrap;
 }

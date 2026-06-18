@@ -91,6 +91,7 @@
   border: none;
   cursor: pointer;
   font-weight: 600;
+  color: var(--text-secondary);
 }
 
 /* Tablet */
