@@ -39,10 +39,10 @@
 .tag,
 .section-tag {
   color: var(--gold);
-  font-size: 0.85rem;
+  font-size: 1rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero-sobre h1 {
