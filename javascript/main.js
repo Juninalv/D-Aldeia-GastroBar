@@ -9,6 +9,20 @@ if (menuToggle && navLinks) {
   });
 }
 
+/* BOTÃO VER MAIS */
+
+const btnLerMais = document.getElementById("btn-ler-mais");
+const textoCompleto = document.getElementById("texto-completo");
+
+if (btnLerMais && textoCompleto) {
+  btnLerMais.addEventListener("click", () => {
+    textoCompleto.classList.toggle("ativo");
+
+    btnLerMais.textContent = textoCompleto.classList.contains("ativo")
+      ? "Ler menos"
+      : "Ler mais";
+  });
+}
 /* SLIDER */
 
 const slides = document.querySelectorAll(".slide");
