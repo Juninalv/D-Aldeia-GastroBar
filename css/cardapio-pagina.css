@@ -303,6 +303,13 @@
   opacity: 0.75;
   font-weight: 400;
 }
+.aviso-ilustrativo {
+  text-align: center;
+  padding: 8px 20px 4px;
+  font-size: 14px;
+  font-style: italic;
+  color: #777;
+}
 
 /* ========================= */
 /* RESPONSIVO */
