@@ -300,6 +300,10 @@
   display: block;
   object-position: center 60%;
 }
+.info-parrilla-centralizada {
+  display: flex;
+  justify-content: center;
+}
 
 /* ========================= */
 /* RESPONSIVO */
