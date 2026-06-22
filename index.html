@@ -417,57 +417,46 @@
       </section>
       <!-- EVENTOS -->
       <section class="eventos" id="eventos">
+        <h2 class="titulo-eventos">Eventos do Mês</h2>
+
         <div class="evento-container">
-          <div class="carousel">
-            <button class="btn prev">&#10094;</button>
+          <div class="evento-imagem">
+            <button class="foto-prev">&#10094;</button>
 
-            <img
-              src="./img/pagina-inicial/eventos/evento-1.jpg"
-              class="slide active"
-              alt="banner evento"
-            />
-            <img
-              src="./img/pagina-inicial/eventos/evento-2.jpg"
-              class="slide"
-              alt="banner evento"
-            />
-            <img
-              src="./img/pagina-inicial/eventos/evento-3.jpg"
-              class="slide"
-              alt="banner evento"
-            />
-            <img
-              src="./img/pagina-inicial/eventos/evento-4.jpg"
-              class="slide"
-              alt="banner evento"
-            />
+            <img id="evento-img" src="" alt="Evento" />
 
-            <button class="btn next">&#10095;</button>
+            <button class="foto-next">&#10095;</button>
           </div>
 
           <div class="evento-info">
-            <span>PRÓXIMO EVENTO</span>
+            <span>EVENTO</span>
 
-            <h2>Dia dos Namorados</h2>
+            <h2 id="evento-titulo"></h2>
 
-            <p>12 de junho • Jantar das 17h às 00h</p>
+            <p id="evento-data"></p>
 
-            <p class="descricao">
-              Uma noite especial para celebrar o amor com menu exclusivo, vinhos
-              selecionados e experiências pensadas para casais.
-            </p>
+            <p id="evento-descricao" class="descricao"></p>
 
             <a
-              href="https://wa.me/5512996078960?text=Olá!%20Gostaria%20de%20reservar%20uma%20mesa%20no%20D'Aldeia%20Gastro%20Bar."
+              id="evento-link"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               class="btn-evento"
             >
               Reservar Mesa
             </a>
+
+            <div class="evento-nav">
+              <button class="evento-prev">Evento Anterior</button>
+              <button class="evento-next">Próximo Evento</button>
+            </div>
           </div>
         </div>
+
+        <div class="indicadores" id="indicadores"></div>
       </section>
+      <!-- GALERIA -->
       <section class="galeria">
         <div class="slider">
           <div class="slide-track">
@@ -567,5 +556,6 @@
       </div>
     </footer>
     <script src="./javascript/main.js"></script>
+    <script src="./javascript/eventos.js"></script>
   </body>
 </html>

@@ -3,51 +3,32 @@
   background: var(--bg-secondary);
 }
 
+.titulo-eventos {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--wine-red);
+  margin-bottom: 60px;
+}
+
 .evento-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 60px;
+  position: relative;
 }
 
-.carousel {
-  position: relative;
+.evento-imagem {
   flex: 1;
 }
 
-.slide {
+.evento-imagem img {
   width: 100%;
-  height: 500px;
-  object-fit: contain;
+  max-height: 650px;
+  object-fit: cover;
   border-radius: 20px;
-  display: none;
-}
-
-.slide.active {
   display: block;
-}
-
-.btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  background: rgba(255, 255, 255, 0.85);
-  font-size: 20px;
-  z-index: 10;
-}
-
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 20px;
 }
 
 .evento-info {
@@ -56,7 +37,7 @@
 
 .evento-info span {
   color: var(--wine-red);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-size: 0.9rem;
 }
 
@@ -73,14 +54,14 @@
 }
 
 .descricao {
-  max-width: 400px;
   color: var(--text-secondary);
   line-height: 1.7;
+  max-width: 450px;
 }
 
 .btn-evento {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 25px;
   padding: 14px 28px;
   background: var(--wine-red);
   color: var(--text-primary);
@@ -93,17 +74,78 @@
   transform: translateY(-3px);
 }
 
-@media (max-width: 992px) {
-  .evento-container {
-    gap: 40px;
-  }
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
 
+.indicadores span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.indicadores span.active {
+  background: var(--wine-red);
+}
+
+.evento-imagem {
+  position: relative;
+  flex: 1;
+}
+
+.foto-prev,
+.foto-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+}
+
+.foto-prev {
+  left: 15px;
+}
+
+.foto-next {
+  right: 15px;
+}
+
+.evento-nav {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.evento-prev,
+.evento-next {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 50px;
+  background: var(--wine-red);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.evento-prev:hover,
+.evento-next:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
   .evento-info h2 {
     font-size: 3rem;
-  }
-
-  .slide {
-    height: 400px;
   }
 }
 
@@ -113,31 +155,35 @@
     gap: 30px;
   }
 
-  .carousel,
   .evento-info {
     width: 100%;
   }
 
-  .slide {
-    height: auto;
-    max-height: 450px;
-  }
-
-  .evento-info {
+  .btn-evento {
+    width: 100%;
+    display: block;
     text-align: center;
   }
 
-  .evento-info h2 {
-    font-size: 2.5rem;
+  .evento-nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 18px;
+  }
+
+  .evento-prev,
+  .evento-next {
+    flex: 1;
+    width: 100%;
   }
 
   .descricao {
     max-width: 100%;
-    margin: 0 auto;
   }
 
-  .btn-evento {
-    margin-top: 25px;
+  .evento-info h2 {
+    font-size: 2.5rem;
   }
 }
 
@@ -146,27 +192,16 @@
     padding: 70px 20px;
   }
 
-  .evento-info span {
-    font-size: 0.8rem;
+  .titulo-eventos {
+    font-size: 2rem;
   }
 
   .evento-info h2 {
     font-size: 2rem;
-    margin: 10px 0;
-  }
-
-  .evento-info p {
-    font-size: 1rem;
   }
 
   .btn-evento {
     width: 100%;
     text-align: center;
-  }
-
-  .btn {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
   }
 }
