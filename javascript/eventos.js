@@ -27,6 +27,8 @@ const eventos = [
     link: "https://wa.me/5512996078960",
   },
 
+ 
+
   /*
   =================================
   ADICIONAR NOVOS EVENTOS AQUI
