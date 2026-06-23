@@ -28,3 +28,4 @@ jobs:
         service: 'site-gastrobar'
         region: 'us-central1'
         source: './'
+        flags: '--allow-unauthenticated'
