@@ -138,9 +138,9 @@ if (eventos.length === 0) {
   titulo.textContent = "Horários de Funcionamento";
 
   data.innerHTML = `
-    Sexta-feira • 17h às 00h<br>
-    Sábado • 11h às 00h<br>
-    Domingo • 11h às 18h
+    Sexta-feira - 17h00 às 00h00<br>
+    Sábado - 11h00 às 00h00<br>
+    Domingo - 11h00 às 18h00
   `;
 
   descricao.textContent =
