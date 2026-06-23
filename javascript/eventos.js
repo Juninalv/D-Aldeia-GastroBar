@@ -148,7 +148,7 @@ if (eventos.length === 0) {
 
   img.src = "./img/pagina-inicial/eventos/programacao-normal.jpg";
 
-  link.style.display = "inline-flex"; // ou "flex", dependendo do seu CSS
+  link.style.display = "inline-flex";
   link.href = "https://wa.me/5512996078960";
   link.textContent = "Reservar Mesa";
 
