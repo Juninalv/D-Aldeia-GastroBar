@@ -10,7 +10,7 @@
 ================================ */
 
 const eventos = [
-  {
+  /*  {
     titulo: "Dia dos Namorados",
     data: "12 de Junho • Jantar das 17h às 00h",
     descricao:
@@ -25,30 +25,7 @@ const eventos = [
     ],
 
     link: "https://wa.me/5512996078960",
-  },
-
- 
-
-  /*
-  =================================
-  ADICIONAR NOVOS EVENTOS AQUI
-  =================================
-
-  {
-    titulo: "Nome do evento",
-    data: "Data • Horário",
-    descricao:
-      "Descrição do evento.",
-
-    imagens: [
-      "./img/pagina-inicial/eventos/evento-5.jpg",
-      "./img/pagina-inicial/eventos/evento-6.jpg",
-    ],
-
-    link: "https://wa.me/5512996078960",
-  },
-
-  */
+  }, */
 ];
 
 let eventoAtual = 0;
@@ -149,5 +126,34 @@ if (eventos.length > 1) {
   if (eventoPrev) eventoPrev.style.display = "none";
 }
 
-// CARREGA O PRIMEIRO EVENTO
-renderizarEvento();
+/* ================================
+   CARREGA EVENTO OU PROGRAMAÇÃO NORMAL
+================================ */
+
+if (eventos.length === 0) {
+  document.querySelector(".titulo-eventos").textContent = "Programação Normal";
+
+  document.querySelector(".evento-info span").style.display = "none";
+
+  titulo.textContent = "Horários de Funcionamento";
+
+  data.innerHTML = `
+    Sexta-feira • 17h às 00h<br>
+    Sábado • 11h às 00h<br>
+    Domingo • 11h às 18h
+  `;
+
+  descricao.textContent =
+    "Venha aproveitar nossa programação regular e desfrutar de uma experiência gastronômica única em meio à natureza.";
+
+  img.src = "./img/pagina-inicial/eventos/programacao-normal.jpg";
+
+  link.style.display = "none";
+
+  fotoPrev.style.display = "none";
+  fotoNext.style.display = "none";
+  eventoPrev.style.display = "none";
+  eventoNext.style.display = "none";
+} else {
+  renderizarEvento();
+}
