@@ -1,3 +1,7 @@
+html.pagina-cardapio {
+  scroll-padding-top: 165px;
+}
+
 .titulo-cardapio {
   width: 100%;
   padding: 20px 20px;

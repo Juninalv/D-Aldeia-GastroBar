@@ -2,6 +2,10 @@
    ALDEIA OUTRO MUNDO
 ========================================== */
 
+html.aldeia-pagina {
+  scroll-padding-top: 80px;
+}
+
 .sobre-aldeia {
   background: var(--bg-primary);
 }
