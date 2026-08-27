@@ -46,8 +46,8 @@ html.pagina-cardapio {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 30px;
-  padding: 20px;
+  gap: 15px;
+  padding: 0px;
   background: rgba(248, 245, 240, 0.97);
   backdrop-filter: blur(10px);
   border-top: 1px solid rgba(122, 47, 29, 0.1);
@@ -214,6 +214,7 @@ html.pagina-cardapio {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 25px;
   padding: 20px 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   transition: 0.3s;
@@ -319,6 +320,68 @@ html.pagina-cardapio {
   margin-top: 40px;
 }
 
+.produto-card {
+  background: var(--bg-secondary);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.produto-info {
+  padding: 16px 20px 20px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.produto-preco {
+  display: block;
+  margin-top: auto;
+  padding-top: 10px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--wine-red);
+}
+
+.item-cardapio .produto-preco {
+  display: inline-block;
+  margin-top: 0;
+  padding-top: 0;
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+/* ========================= */
+/* PIZZAS DOCES */
+/* ========================= */
+
+.pizzas-doces-lista .item-cardapio {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 30px;
+}
+
+.pizzas-doces-lista .item-cardapio > span:first-child {
+  min-width: 0;
+  line-height: 1.5;
+}
+
+.pizzas-doces-lista .produto-preco {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  text-align: left;
+}
+
 /* ========================= */
 /* RESPONSIVO */
 /* ========================= */
@@ -397,6 +460,15 @@ html.pagina-cardapio {
   .info-box li {
     font-size: 15px;
   }
+
+  .pizzas-doces-lista .item-cardapio {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .pizzas-doces-lista .produto-preco {
+    text-align: left;
+  }
 }
 
 @media (max-width: 480px) {
@@ -432,5 +504,17 @@ html.pagina-cardapio {
   .info-box li {
     margin-bottom: 8px;
     line-height: 1.5;
+  }
+
+  .item-cardapio {
+    gap: 12px;
+  }
+
+  .item-cardapio .produto-preco {
+    font-size: 1rem;
+  }
+
+  .pizzas-doces-lista .item-cardapio {
+    gap: 6px;
   }
 }
